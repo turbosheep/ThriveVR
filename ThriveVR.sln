@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{4136B5FC-04F7-F861-40FA-52FF4F3D69BD}") = "ThriveVR", "Assembly-CSharp-firstpass.csproj", "{9612A2F9-2520-3007-E0AC-697D0A39F2F2}"
 EndProject
+Project("{4136B5FC-04F7-F861-40FA-52FF4F3D69BD}") = "ThriveVR", "Assembly-CSharp.csproj", "{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}"
+EndProject
 Project("{4136B5FC-04F7-F861-40FA-52FF4F3D69BD}") = "ThriveVR", "Assembly-CSharp-Editor.csproj", "{89CD0876-8B96-A072-4AA1-39596BC03C77}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{9612A2F9-2520-3007-E0AC-697D0A39F2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9612A2F9-2520-3007-E0AC-697D0A39F2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9612A2F9-2520-3007-E0AC-697D0A39F2F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89CD0876-8B96-A072-4AA1-39596BC03C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89CD0876-8B96-A072-4AA1-39596BC03C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89CD0876-8B96-A072-4AA1-39596BC03C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -42,4 +48,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
