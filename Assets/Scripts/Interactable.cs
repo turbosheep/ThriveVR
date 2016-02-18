@@ -9,13 +9,14 @@ public class Interactable : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-	    ray = new Ray(this.transform.position, this.transform.forward);
         bool itemAttached = false;
         Debug.Log("hello");
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+    void FixedUpdate()
+    {
+        ray = new Ray(this.transform.position, this.transform.forward);
 		if (Input.GetKeyDown(KeyCode.Mouse0)) 
         {
             Debug.Log("click");
