@@ -20,7 +20,3 @@ C:\Users\Michael Nelson\Documents\thrive\Temp\bin\Debug\UnityEngine.Networking.x
 C:\Users\Michael Nelson\Documents\thrive\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\Michael Nelson\Documents\thrive\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Michael Nelson\Documents\thrive\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\Michael Nelson\Documents\thrive\Temp\bin\Debug\UnityEngine.Advertisements.dll
-C:\Users\Michael Nelson\Documents\thrive\Temp\bin\Debug\UnityEngine.Analytics.dll
-C:\Users\Michael Nelson\Documents\thrive\Temp\bin\Debug\UnityEngine.Advertisements.xml
-C:\Users\Michael Nelson\Documents\thrive\Temp\bin\Debug\UnityEngine.Analytics.xml
