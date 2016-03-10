@@ -5,10 +5,10 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<RootNamespace></RootNamespace>
-	<ProjectGuid>{1CE2DAB8-7F30-B8A3-9CA6-545A8EBF952C}</ProjectGuid>
+	<ProjectGuid>{FB075997-B5E9-7E59-8CDC-84ADB3CEFE8B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -28,6 +28,7 @@
 	<DebugType>pdbonly</DebugType>
 	<Optimize>true</Optimize>
 	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -45,17 +46,83 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EventColliderScript.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BaseAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BubbleAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\CartoonExplosionFX.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\CoreAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\ExplosionAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\FragmentAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\RadialAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\RingAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\SparkAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\TextAnimator.cs" />
+     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\WaveAnimator.cs" />
+     <Compile Include="Assets\ResetScript.cs" />
+     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\ColorSelector\ColorSelector.cs" />
+     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" />
+     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" />
+     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" />
+     <Compile Include="Assets\Scripts\CurveCreator.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
+     <Compile Include="Assets\Scripts\SteamVR_GrabComponent.cs" />
+     <Compile Include="Assets\Scripts\TreeSpin.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TrackedController.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraMask.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Controller.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ControllerManager.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Ears.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ExternalCamera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Fade.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Frustum.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_GameView.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_IK.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_LoadLevel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Menu.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Overlay.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_PlayArea.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Stats.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Status.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_StatusText.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TestController.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\flyby.cs" />
+     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring Particle.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
+     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Two Color.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
+     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring Half.shader" />
+     <None Include="Assets\Raving Bots\Fonts\Used Fonts Info.txt" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+     <None Include="Assets\SteamVR\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -63,7 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CD6AF7A6-C2A2-BA9A-788A-4D874DEE03D6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{9612A2F9-2520-3007-E0AC-697D0A39F2F2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

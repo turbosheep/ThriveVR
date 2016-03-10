@@ -1,39 +1,87 @@
 fileFormatVersion: 2
 guid: 2d506044d7d434e339198a4f53023659
-timeCreated: 1455671745
+timeCreated: 1457033806
 licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Darume
-    100004: joint1
-    100006: joint2
-    100008: joint3
-    100010: joint4
-    100012: joint5
-    100014: joint6
-    100016: left
-    100018: polySurface3
-    100020: polySurface4
-    400000: //RootNode
-    400002: Darume
-    400004: joint1
-    400006: joint2
-    400008: joint3
-    400010: joint4
-    400012: joint5
-    400014: joint6
-    400016: left
-    400018: polySurface3
-    400020: polySurface4
-    2300000: polySurface3
-    2300002: polySurface4
-    3300000: polySurface3
-    3300002: polySurface4
-    4300000: polySurface3
-    4300002: polySurface4
+    100000: BackToNormal
+    100002: Body_Model
+    100004: Bottom
+    100006: curve1
+    100008: //RootNode
+    100010: Daruma
+    100012: directionalLight1
+    100014: distanceDimension1
+    100016: Face
+    100018: Face_Model
+    100020: Head
+    100022: HeadEnd
+    100024: L_Eye
+    100026: left
+    100028: locator1
+    100030: locator2
+    100032: locator3
+    100034: Mid
+    100036: polySurface5
+    100038: R_Eye
+    100040: Root
+    100042: transform6
+    100044: WholeMesh
+    100046: WholeMesh_R_Eye
+    100048: group1
+    100050: IKCTRL
+    100052: ikHandle1
+    100054: PoleVectorExample
+    100056: Rotation
+    100058: WorldCTRL
+    400000: BackToNormal
+    400002: Body_Model
+    400004: Bottom
+    400006: curve1
+    400008: //RootNode
+    400010: Daruma
+    400012: directionalLight1
+    400014: distanceDimension1
+    400016: Face
+    400018: Face_Model
+    400020: Head
+    400022: HeadEnd
+    400024: L_Eye
+    400026: left
+    400028: locator1
+    400030: locator2
+    400032: locator3
+    400034: Mid
+    400036: polySurface5
+    400038: R_Eye
+    400040: Root
+    400042: transform6
+    400044: WholeMesh
+    400046: WholeMesh_R_Eye
+    400048: group1
+    400050: IKCTRL
+    400052: ikHandle1
+    400054: PoleVectorExample
+    400056: Rotation
+    400058: WorldCTRL
+    2300000: Body_Model
+    2300002: Face_Model
+    2300004: L_Eye
+    2300006: R_Eye
+    3300000: Body_Model
+    3300002: Face_Model
+    3300004: L_Eye
+    3300006: R_Eye
+    4300000: R_Eye
+    4300002: L_Eye
+    4300004: Face_Model
+    4300006: Body_Model
     9500000: //RootNode
+    13700000: Body_Model
+    13700002: Face_Model
+    13700004: L_Eye
+    13700006: R_Eye
   materials:
     importMaterials: 1
     materialName: 0
@@ -41,6 +89,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -48,9 +97,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -74,24 +123,25 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

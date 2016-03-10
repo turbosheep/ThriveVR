@@ -24,7 +24,7 @@ public class Interactable : MonoBehaviour {
             {
                 hit.transform.parent = null;
                 Debug.Log(hit.transform.name + " was detached");
-                hit.transform.gameObject.GetComponent<Rigidbody>().useGravity = true;
+                hit.transform.gameObject.GetComponent<Rigidbody>().useGravity = false;
                 itemAttached = false;
             }
             else if (Physics.Raycast(ray, out hit))
