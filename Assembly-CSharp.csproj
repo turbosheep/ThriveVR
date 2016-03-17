@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\Scripts\SteamVR_GrabComponent.cs" />
      <Compile Include="Assets\Scripts\TreeSpin.cs" />
+     <Compile Include="Assets\Scripts\UI\LevelManager.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
