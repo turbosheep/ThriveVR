@@ -69,6 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CreateLegsScript.cs" />
     <Compile Include="Assets\EventColliderScript.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BaseAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BubbleAnimator.cs" />
