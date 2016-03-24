@@ -82,8 +82,8 @@ namespace RavingBots.CartoonExplosion
 			}
 
 			Progress = p;
-            transform.LookAt(Camera.main.transform);
-            foreach (var ea in _animators)
+
+			foreach (var ea in _animators)
 				ea.SetProgress(Progress);
         }
 	}

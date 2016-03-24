@@ -69,6 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DarumaScript.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BaseAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BubbleAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\CartoonExplosionFX.cs" />
@@ -84,6 +85,8 @@
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" />
+    <Compile Include="Assets\Scripts\CarGoesboom.cs" />
+    <Compile Include="Assets\Scripts\CarScript.cs" />
     <Compile Include="Assets\Scripts\ColliderCreation.cs" />
     <Compile Include="Assets\Scripts\CreateLegsScript.cs" />
     <Compile Include="Assets\Scripts\CurveCreator.cs" />

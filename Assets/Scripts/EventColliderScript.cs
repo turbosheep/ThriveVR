@@ -10,6 +10,7 @@ public class EventColliderScript : MonoBehaviour {
     void Awake() {
         BoxRef = this.gameObject.AddComponent<BoxCollider>();
         ScriptRef = this.gameObject.GetComponent<CartoonExplosionFX>();
+        ParentRef = this.gameObject.GetComponent<GameObject>();
 
 
     }
