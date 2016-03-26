@@ -50,6 +50,7 @@
      <Compile Include="Assets\Raving Bots\Scripts\Editor\CartoonExplosionFXEditor.cs" />
      <Compile Include="Assets\Raving Bots\Scripts\Editor\ExplosionAnimatorEditor.cs" />
      <Compile Include="Assets\Raving Bots\Scripts\Editor\FragmentAnimatorEditor.cs" />
+     <Compile Include="Assets\Shatter Toolkit\Core\Library\Editor\ShatterToolEditor.cs" />
      <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
      <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
      <Compile Include="Assets\SteamVR\Editor\SteamVR_Settings.cs" />
@@ -66,9 +67,11 @@
      <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Two Color.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
      <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring Half.shader" />
+     <None Include="Assets\Shatter Toolkit\Examples\Shared Assets\Shaders\Simple.shader" />
      <None Include="Assets\Raving Bots\Fonts\Used Fonts Info.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
+     <None Include="Assets\Shatter Toolkit\Examples\Hierarchy\Note.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
  <Reference Include="UnityEditor.Advertisements">

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AnimationDemo.unity
+- path: Assets/Scenes/FootWork.unity
   isLoaded: 1
   isActive: 1

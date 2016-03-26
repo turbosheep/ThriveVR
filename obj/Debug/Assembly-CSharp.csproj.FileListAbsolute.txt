@@ -13,7 +13,6 @@ C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\Unity.UNetWeaver.dll
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\Mono.Cecil.Mdb.dll
-C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\UnityEngine.xml
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\UnityEditor.xml
 C:\Users\Michael\Documents\GitHub\ThriveVR\Temp\bin\Debug\UnityEngine.UI.xml

@@ -11,7 +11,6 @@ public class SteamVR_GrabComponent: MonoBehaviour
     GameObject TextCompensateLocation;  
     SteamVR_TrackedObject trackedObj;
 	public FixedJoint joint;
-
     
     //FixedJoint ObjectsJoint;
     void Awake()
@@ -41,15 +40,17 @@ public class SteamVR_GrabComponent: MonoBehaviour
                 Debug.Log("in the if");
             }
             ObjectGrabbed = hit.gameObject;
-            ObjectGrabbed.GetComponent<Rigidbody>().useGravity = false;
         }
      }
 
     //Handled on event trigger released
-    void OnCollisionExit()
+    void OnTriggerExit(Collider hit)
     {
-        Debug.Log("OnCollisionExit");
-        ObjectGrabbed = null;
+        if (hit.gameObject == ObjectGrabbed.gameObject)
+        {
+            Debug.Log("OnCollisionExit");
+            ObjectGrabbed = null;
+        }
     }
 
 	void FixedUpdate()
@@ -66,6 +67,7 @@ public class SteamVR_GrabComponent: MonoBehaviour
         {
             if (ObjectGrabbed != null)
             {
+                ObjectGrabbed.GetComponent<Rigidbody>().useGravity = false;
                 joint = ObjectGrabbed.AddComponent<FixedJoint>();
                 joint.connectedBody = Self;
             }
@@ -94,7 +96,6 @@ public class SteamVR_GrabComponent: MonoBehaviour
 			}
             ObjectGrabbed.GetComponent<Rigidbody>().useGravity = true;
             rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
-            ObjectGrabbed = null;
         }
 	}
 }

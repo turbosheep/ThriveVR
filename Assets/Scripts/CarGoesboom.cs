@@ -25,7 +25,7 @@ public class CarGoesboom : MonoBehaviour {
         if (collision.gameObject.tag == "Car" )
         {
             //GameObject obj = Instantiate(Explosion, this.gameObject.transform.position, Quaternion.identity) as GameObject;
-            ScriptRef.Play();
+            //ScriptRef.Play();
             RigidRef.AddExplosionForce(5, this.transform.forward, 1, 1.0f);
             var temp = collision.gameObject.GetComponent<Rigidbody>();
            // temp.AddExplosionForce(100, this.transform.position, 7, 3.0f);
