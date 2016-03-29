@@ -6,4 +6,4 @@ So this is embarassing but
 We weren't ready for you yet!
 Could you help us clean up the place before we begin
 I'm kinda without hands
-Please put the trees on the blue square, using the trigger located under your controller
+Please put the trees on the <color=blue>blue square</color>, using the trigger located under your controller
