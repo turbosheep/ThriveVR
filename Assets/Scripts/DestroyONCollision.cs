@@ -7,10 +7,7 @@ public class DestroyONCollision : MonoBehaviour {
 	void Start () {
 	
 	}
-    void OnCollisionEnter(Collider hit)
-    {
-       // Destroy();
-    }
+  
 	// Update is called once per frame
 	void Update () {
 	

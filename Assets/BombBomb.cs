@@ -29,8 +29,6 @@ public class BombBomb : MonoBehaviour {
             delay += Time.deltaTime;
         }
 
-        if (delay > 4);
-
         if(isTicking == true && delay < 2)
         {
             Reference.material.color = Color.grey;

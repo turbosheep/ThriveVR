@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TreeSpin : MonoBehaviour {
 
+[RequireComponent(typeof(CapsuleCollider))]
+
+public class TreeSpin : MonoBehaviour {
+    CapsuleCollider collider;
     float random;
     float hover;
     float y;
 	// Use this for initialization
 	void Start () {
         random = Random.Range(.2f, .4f);
-	}
+        collider = this.GetComponent<CapsuleCollider>();
+    }
 	// Update is called once per frame
 	void FixedUpdate () {
         y += .1f;

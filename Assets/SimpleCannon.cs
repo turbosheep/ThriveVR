@@ -53,23 +53,17 @@ public class SimpleCannon : MonoBehaviour {
             if (charge < 2)
             {
                 GameObject bPrefab = Instantiate(Prefab[Random.Range(0, Prefab.Length - 1)], PoofRef.position, Quaternion.identity) as GameObject;
-                bPrefab.GetComponent<Rigidbody>().AddForce(toCamera * 2 * 1000f);
+                bPrefab.GetComponent<Rigidbody>().AddForce(toCamera * 2 * 2000f);
                 bPrefab.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(-200, 200), 200, Random.Range(-200,200)));
                 PoofRef.GetComponent<CartoonExplosionFX>().Play();
             }
             else
             {
                 GameObject bPrefab = Instantiate(Prefab[Prefab.Length - 1], PoofRef.position, Quaternion.identity) as GameObject;
-                bPrefab.GetComponent<Rigidbody>().AddForce(toCamera / ((charge / 5) + 1) * 1000f);
+                bPrefab.GetComponent<Rigidbody>().AddForce(toCamera / ((charge / 5) + 1) * 2000f);
                 bPrefab.transform.localScale = bPrefab.transform.localScale * ((charge / 5) + 1);
                 PoofRef.GetComponent<CartoonExplosionFX>().Play();
-
-
-
             }
-
-
-
             charge = 1f;
         }
    
