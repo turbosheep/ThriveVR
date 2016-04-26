@@ -8,8 +8,8 @@ public class TrashCan : MonoBehaviour {
     public Animation Anim;
     public AudioSource Audio;
     public Text Text;
-
-    int Count = 2147483647; 
+    public GameObject Prefab;
+    public int Count = 10; 
 
 
 	// Use this for initialization
@@ -33,8 +33,8 @@ public class TrashCan : MonoBehaviour {
             Print();
             Anim.Play();
             Audio.Play();
-            if (Count == 0)
-                SceneManager.LoadScene("Chinashop");
+            if (Count <= 0)
+                SceneManager.LoadScene("Island");
 
         }
         
@@ -42,6 +42,6 @@ public class TrashCan : MonoBehaviour {
 
     void Print()
     {
-        Text.text = "Your workspace is currently " +  "<color=green>" + Count + "x" + "</color>" + "  more messy than it needs to be";
+        Text.text = "We need  " +  "<color=green>" + Count + "x" + "</color>" + "  more items to recycle to proceed";
     }
 }

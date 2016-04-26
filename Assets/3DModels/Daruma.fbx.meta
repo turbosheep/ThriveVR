@@ -359,7 +359,7 @@ ModelImporter:
       - path: Daruma/Face_Model/transform1
         weight: 1
       - path: Root
-        weight: 1
+        weight: 0
       - path: Root/Bottom
         weight: 1
       - path: Root/Bottom/Mid
@@ -568,8 +568,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Bow
       takeName: Take 001
-      firstFrame: 900
-      lastFrame: 960
+      firstFrame: 679
+      lastFrame: 783
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -615,7 +615,7 @@ ModelImporter:
       - path: Daruma/Face_Model/transform1
         weight: 1
       - path: Root
-        weight: 1
+        weight: 0
       - path: Root/Bottom
         weight: 1
       - path: Root/Bottom/Mid

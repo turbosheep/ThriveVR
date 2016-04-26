@@ -68,6 +68,7 @@ public class SteamVR_GrabComponent: MonoBehaviour
         {
             if (ObjectGrabbed != null)
             {
+                device.TriggerHapticPulse(500);
                 Rigidbody tempspace = ObjectGrabbed.GetComponent<Rigidbody>();
                 MassContainer = tempspace.mass;
                 tempspace.mass = 1;

@@ -7,15 +7,18 @@ public class CreateLegsScript : MonoBehaviour {
     public GameObject MasterPrefab;
 
     public float delay;
-
+    public AudioSource Sound;
     Collider hitObject;
     bool inside = false;
     bool grabbed = false;
     float temp = 0;
+
     // Use this for initialization
     void Awake () 
     {
+        MasterPrefab = GameObject.Find("GetPlayerDataSquare");
         self = gameObject;
+        Sound = gameObject.GetComponent<AudioSource>();
     }
     void OnTriggerEnter(Collider Trigger)
     {
@@ -34,9 +37,11 @@ public class CreateLegsScript : MonoBehaviour {
             temp += Time.deltaTime;
         else if (inside == true && grabbed != true)
         {
+            Sound.Play();
             self.transform.parent = hitObject.transform;
             grabbed = true;
-            MasterPrefab.GetComponent<Renderer>().enabled = false; 
+            Destroy(MasterPrefab, 10);
+            
            // GameObject bPrefab = Instantiate(Prefab[Random.Range(0, Prefab.Length - 1)], PoofRef.position, Quaternion.identity) as GameObject;
         }
 	}

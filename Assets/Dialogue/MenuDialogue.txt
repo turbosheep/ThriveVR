@@ -1,0 +1,4 @@
+Hello! What is your name? 
+My name is Daruma!!!
+This is a Physical Therapy game designed to get you moving!
+Please put the Sphere into the trashcan to continue

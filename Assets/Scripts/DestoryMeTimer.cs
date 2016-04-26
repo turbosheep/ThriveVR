@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DestoryMeTimer : MonoBehaviour {
-    public float Delay;
+    public float Delay = 10f;
 
 	// Use this for initialization
 	void Start () {

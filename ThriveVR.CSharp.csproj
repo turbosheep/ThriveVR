@@ -61,6 +61,12 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="GETween">
+      <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ThriveVR.CSharp.Plugins.csproj">
@@ -69,16 +75,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnythingFalls.cs" />
-    <Compile Include="Assets\Ball.cs" />
-    <Compile Include="Assets\BallCollide.cs" />
-    <Compile Include="Assets\BombBomb.cs" />
-    <Compile Include="Assets\DarumaTextBoxManager.cs" />
+    <Compile Include="Assets\Ball2Script.cs" />
+    <Compile Include="Assets\Coconut.cs" />
+    <Compile Include="Assets\CoconutGame.cs" />
+    <Compile Include="Assets\CoinPoints.cs" />
     <Compile Include="Assets\Dialogue\CharacterDrivers\DialogueController.cs" />
     <Compile Include="Assets\Dialogue\CharacterDrivers\TextImport.cs" />
-    <Compile Include="Assets\LegGameScript.cs" />
-    <Compile Include="Assets\MouseMove2D.cs" />
-    <Compile Include="Assets\NextLevel.cs" />
+    <Compile Include="Assets\ForceScaling.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BaseAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\BubbleAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\CartoonExplosionFX.cs" />
@@ -90,27 +105,41 @@
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\SparkAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\TextAnimator.cs" />
     <Compile Include="Assets\Raving Bots\Scripts\CartoonExplosion\WaveAnimator.cs" />
+    <Compile Include="Assets\ResetBall.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\ColorSelector\ColorSelector.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" />
     <Compile Include="Assets\Resources\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" />
     <Compile Include="Assets\Scripts\Aim.cs" />
+    <Compile Include="Assets\Scripts\AnythingFalls.cs" />
+    <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\BallCollide.cs" />
+    <Compile Include="Assets\Scripts\BlinkingScript.cs" />
+    <Compile Include="Assets\Scripts\BombBomb.cs" />
+    <Compile Include="Assets\Scripts\CannonCreationscript.cs" />
     <Compile Include="Assets\Scripts\CarGoesboom.cs" />
     <Compile Include="Assets\Scripts\CarScript.cs" />
     <Compile Include="Assets\Scripts\ColliderCreation.cs" />
     <Compile Include="Assets\Scripts\CreateLegsScript.cs" />
     <Compile Include="Assets\Scripts\CurveCreator.cs" />
     <Compile Include="Assets\Scripts\DarumaScript.cs" />
+    <Compile Include="Assets\Scripts\DarumaTextBoxManager.cs" />
     <Compile Include="Assets\Scripts\DestoryMeTimer.cs" />
     <Compile Include="Assets\Scripts\DestroyONCollision.cs" />
     <Compile Include="Assets\Scripts\EventColliderScript.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\KickingForce.cs" />
+    <Compile Include="Assets\Scripts\LegGameScript.cs" />
+    <Compile Include="Assets\Scripts\MouseMove2D.cs" />
+    <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\ResetScript.cs" />
     <Compile Include="Assets\Scripts\RigidbodyFPSController.cs" />
+    <Compile Include="Assets\Scripts\SimpleCannon.cs" />
     <Compile Include="Assets\Scripts\SteamVR_GrabComponent.cs" />
     <Compile Include="Assets\Scripts\TrashCan.cs" />
     <Compile Include="Assets\Scripts\TreeSpin.cs" />
     <Compile Include="Assets\Scripts\UI\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\hideAtStart.cs" />
     <Compile Include="Assets\Scripts\keepforever.cs" />
     <Compile Include="Assets\Shatter Toolkit\Core\Library\Common\Tools.cs" />
     <Compile Include="Assets\Shatter Toolkit\Core\Library\Hull\Edge.cs" />
@@ -140,7 +169,6 @@
     <Compile Include="Assets\Shatter Toolkit\Helpers\Mouse\MouseInstantiate.cs" />
     <Compile Include="Assets\Shatter Toolkit\Helpers\Mouse\MouseShatter.cs" />
     <Compile Include="Assets\Shatter Toolkit\Helpers\Mouse\MouseSplit.cs" />
-    <Compile Include="Assets\SimpleCannon.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -177,12 +205,18 @@
     <None Include="Assets\Dialogue\Animation.txt" />
     <None Include="Assets\Dialogue\CANNON.txt" />
     <None Include="Assets\Dialogue\FeetSuggestion.txt" />
+    <None Include="Assets\Dialogue\Footwork.txt" />
+    <None Include="Assets\Dialogue\Island.txt" />
+    <None Include="Assets\Dialogue\MenuDialogue.txt" />
     <None Include="Assets\Dialogue\TestSceneDialogue.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Raving Bots\Fonts\Used Fonts Info.txt" />
     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring Half.shader" />
     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring Particle.shader" />
     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Ring.shader" />
     <None Include="Assets\Raving Bots\Shaders\Cartoon Explosion Two Color.shader" />
+    <None Include="Assets\Scripts\Island.txt" />
     <None Include="Assets\Shatter Toolkit\Examples\Hierarchy\Note.txt" />
     <None Include="Assets\Shatter Toolkit\Examples\Shared Assets\Shaders\Simple.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
@@ -206,6 +240,8 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\Water Flow FREE\Readme.txt" />
+    <None Include="Assets\Water Flow FREE\Shaders\Water Flow FREE Simple.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
