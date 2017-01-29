@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+using UnityEngine;
 using Valve.VR;
 
 public struct ClickedEventArgs
@@ -40,14 +41,27 @@ public class SteamVR_TrackedController : MonoBehaviour
         {
             gameObject.AddComponent<SteamVR_TrackedObject>();
         }
-        this.GetComponent<SteamVR_TrackedObject>().index = (SteamVR_TrackedObject.EIndex)controllerIndex;
-        if (this.GetComponent<SteamVR_RenderModel>() != null)
-        {
-            this.GetComponent<SteamVR_RenderModel>().index = (SteamVR_TrackedObject.EIndex)controllerIndex;
+
+		if (controllerIndex != 0)
+		{
+			this.GetComponent<SteamVR_TrackedObject>().index = (SteamVR_TrackedObject.EIndex)controllerIndex;
+			if (this.GetComponent<SteamVR_RenderModel>() != null)
+			{
+				this.GetComponent<SteamVR_RenderModel>().index = (SteamVR_TrackedObject.EIndex)controllerIndex;
+			}
+		}
+		else
+		{
+			controllerIndex = (uint) this.GetComponent<SteamVR_TrackedObject>().index;
         }
     }
 
-    public virtual void OnTriggerClicked(ClickedEventArgs e)
+	public void SetDeviceIndex(int index)
+	{
+			this.controllerIndex = (uint) index;
+	}
+
+	public virtual void OnTriggerClicked(ClickedEventArgs e)
     {
         if (TriggerClicked != null)
             TriggerClicked(this, e);
@@ -117,7 +131,7 @@ public class SteamVR_TrackedController : MonoBehaviour
     void Update()
     {
 		var system = OpenVR.System;
-		if (system != null && system.GetControllerState(controllerIndex, ref controllerState))
+		if (system != null && system.GetControllerState(controllerIndex, ref controllerState, (uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VRControllerState_t))))
 		{
 			ulong trigger = controllerState.ulButtonPressed & (1UL << ((int)EVRButtonId.k_EButton_SteamVR_Trigger));
             if (trigger > 0L && !triggerPressed)

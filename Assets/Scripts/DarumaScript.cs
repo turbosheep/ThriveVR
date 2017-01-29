@@ -13,14 +13,14 @@ public class DarumaScript : MonoBehaviour
     public Transform[] target;
     public GameObject NewTarget;
     public GameObject HeadRef;
-    NavMeshAgent agent;
+    UnityEngine.AI.NavMeshAgent agent;
     public float Radius = 1;
     public float Speed = 1;
     public int NavIndex = 1;
     public float moveMultiplier;
     public int count;
     private Vector3 previousPosition;
-    private Transform OriginalLocation;
+    //private Transform OriginalLocation;
     public GameObject TextBoxRef;
     public bool Static;
 
@@ -34,19 +34,19 @@ public class DarumaScript : MonoBehaviour
 
     public bool isTalking = false;
     private bool grounded = false;
-    private Rigidbody Rigidbody;
+    public Rigidbody Rigidbody;
     float RadiusRatio;
 
 
     void Start()
     {
         //Head Joint Reference
-        NewTarget = GameObject.Find("FaceOffset");
-        OriginalLocation = NewTarget.transform;
+        NewTarget = GameObject.Find("Camera (head)");
+       // OriginalLocation = NewTarget.transform;
         //Camera Reference
         HeadRef = GameObject.Find("Camera (head)");
         Anim = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         target = NavPoint.GetComponentsInChildren<Transform>();
         count = target.Length;
         agent.speed = Speed;
@@ -56,42 +56,44 @@ public class DarumaScript : MonoBehaviour
     {
       Rigidbody = this.GetComponent<Rigidbody>();
       Rigidbody.freezeRotation = true;
-      Rigidbody.useGravity = true;
+      Rigidbody.useGravity = false;
     }
 
     void Update()
     {
-
-        //If the agent's desintation is within the acceptable radius for its location then update and change state
-        if (Radius >= agent.remainingDistance && NavIndex<count)
+        if (!Static)
         {
-            agent.SetDestination(target[NavIndex].position);
-            NavIndex++;
-        }
-        //Find current magitude then divide it by the max speed and 
-        moveMultiplier = 1+(agent.velocity.magnitude / Speed);
-        if (moveMultiplier > 2)
-            moveMultiplier = 2;
-        Anim.SetFloat("Speed", moveMultiplier);
-        previousPosition = transform.position;
+            //If the agent's desintation is within the acceptable radius for its location then update and change state
+            if (Radius >= agent.remainingDistance && NavIndex < count)
+            {
+                agent.SetDestination(target[NavIndex].position);
+                NavIndex++;
+            }
+            //Find current magitude then divide it by the max speed and 
+            moveMultiplier = 1 + (agent.velocity.magnitude / Speed);
+            if (moveMultiplier > 2)
+                moveMultiplier = 2;
+            Anim.SetFloat("Speed", moveMultiplier);
+            previousPosition = transform.position;
 
-        //Has the object stopped moving and has it reached their final destination? 
-        if (moveMultiplier == 1F && NavIndex == count && isTalking == false) {
+            //Has the object stopped moving and has it reached their final destination? 
+            if (moveMultiplier == 1F && NavIndex == count && isTalking == false)
+            {
 
-            Talking();
-        }
-        
-        if (isTalking)
-        {
-            //FaceOffset targets current Camera (Head). Y rotation Is handled Here!
-            Vector3 Temp = (HeadRef.transform.position - NewTarget.transform.position);
-            NewTarget.transform.right = Temp;
-            //Objects rotation follows Head through just its x and z coordinats
-            Quaternion Rotation = Quaternion.LookRotation(new Vector3(Temp.x,0,Temp.z));
-            this.gameObject.transform.rotation = Rotation;
+                Talking();
+            }
 
+            if (isTalking)
+            {
+                //FaceOffset targets current Camera (Head). Y rotation Is handled Here!
+                Vector3 Temp = (HeadRef.transform.position - NewTarget.transform.position);
+                NewTarget.transform.right = Temp;
+                //Objects rotation follows Head through just its x and z coordinats
+                Quaternion Rotation = Quaternion.LookRotation(new Vector3(Temp.x, 0, Temp.z));
+                this.gameObject.transform.rotation = Rotation;
+
+            }
         }
-        
     }
 
     void Talking()

@@ -46,7 +46,7 @@ public class SteamVR_GrabComponent: MonoBehaviour
     //Handled on event trigger released
     void OnTriggerExit(Collider hit)
     {
-        if (hit.gameObject == ObjectGrabbed.gameObject)
+        if (hit.gameObject == ObjectGrabbed.gameObject && joint)
         {
             Debug.Log("OnCollisionExit");
             ObjectGrabbed = null;
@@ -100,10 +100,13 @@ public class SteamVR_GrabComponent: MonoBehaviour
                 rigidbody.velocity = device.velocity;
                 rigidbody.angularVelocity = device.angularVelocity;
             }
-            ObjectGrabbed.GetComponent<Rigidbody>().useGravity = true;
-            ObjectGrabbed.GetComponent<Rigidbody>().mass = MassContainer;
-            MassContainer = 1;
-            rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
+            if (ObjectGrabbed)
+            {
+                ObjectGrabbed.GetComponent<Rigidbody>().useGravity = true;
+                ObjectGrabbed.GetComponent<Rigidbody>().mass = MassContainer;
+                MassContainer = 1;
+                rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
+            }
         }
     }
 }

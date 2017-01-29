@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR.CSharp.Plugins", "ThriveVR.CSharp.Plugins.csproj", "{C4EE2524-241D-9CB1-5EC8-F80C32F01D7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR.Plugins", "ThriveVR.Plugins.csproj", "{365B14A0-66E0-CC6E-80AE-FCAC440BF53E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR.CSharp", "ThriveVR.CSharp.csproj", "{887E71C4-1AE2-5D71-EDE0-5ACD25CD3539}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR", "ThriveVR.csproj", "{3942B038-86D9-AF1C-F104-8D973F613019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR.CSharp.Editor", "ThriveVR.CSharp.Editor.csproj", "{582D0ADA-A9CF-93AC-9B8B-B51DDFED3A7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriveVR.Editor", "ThriveVR.Editor.csproj", "{0EAB7219-1C86-17FE-4E49-D7B96EACCD6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4EE2524-241D-9CB1-5EC8-F80C32F01D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4EE2524-241D-9CB1-5EC8-F80C32F01D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4EE2524-241D-9CB1-5EC8-F80C32F01D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4EE2524-241D-9CB1-5EC8-F80C32F01D7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{887E71C4-1AE2-5D71-EDE0-5ACD25CD3539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{887E71C4-1AE2-5D71-EDE0-5ACD25CD3539}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{887E71C4-1AE2-5D71-EDE0-5ACD25CD3539}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{887E71C4-1AE2-5D71-EDE0-5ACD25CD3539}.Release|Any CPU.Build.0 = Release|Any CPU
-		{582D0ADA-A9CF-93AC-9B8B-B51DDFED3A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{582D0ADA-A9CF-93AC-9B8B-B51DDFED3A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{582D0ADA-A9CF-93AC-9B8B-B51DDFED3A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{582D0ADA-A9CF-93AC-9B8B-B51DDFED3A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365B14A0-66E0-CC6E-80AE-FCAC440BF53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365B14A0-66E0-CC6E-80AE-FCAC440BF53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365B14A0-66E0-CC6E-80AE-FCAC440BF53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365B14A0-66E0-CC6E-80AE-FCAC440BF53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3942B038-86D9-AF1C-F104-8D973F613019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3942B038-86D9-AF1C-F104-8D973F613019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3942B038-86D9-AF1C-F104-8D973F613019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3942B038-86D9-AF1C-F104-8D973F613019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAB7219-1C86-17FE-4E49-D7B96EACCD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAB7219-1C86-17FE-4E49-D7B96EACCD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAB7219-1C86-17FE-4E49-D7B96EACCD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAB7219-1C86-17FE-4E49-D7B96EACCD6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
